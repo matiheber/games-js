@@ -1,0 +1,75 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    background-color: black;
+}
+div#letras button{
+  color: white;
+}
+div#letras button:hover{
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+button {
+    border: none;
+    padding: 10px;
+    width: 35px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #080808;
+}
+
+
+button:hover {
+    color: silver;
+}
+
+button:disabled,
+button[disabled]{  
+    color: rgba(0, 0, 0, 0.85) !important;
+}
+
+#botonJuegoNuevo {
+    color: silver;
+    margin: 50px;
+    width: 120px;
+    letter-spacing: 2px;
+}
+
+table, th, td {
+    border: none;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+h1 {
+    letter-spacing: 1px;
+    color: silver;
+}
+
+h2 {
+    letter-spacing: 5px;
+    color: silver;
+}
+
+h6 {
+    color: #666666;
+}
+
+p {
+    color: silver;
+}
+/* MODIFICA MATI */
+
+div.fila1, div.fila2{
+  overflow: hidden;
+  width: 50%;
+  margin-left: 36%;
+}
+div.fila3{
+  overflow: hidden;
+  width: 50%;
+  margin-left: 40%;
+}
+div.fila1 div.letra, div.fila2 div.letra, div.fila3 div.letra{
+  float: left;
+}

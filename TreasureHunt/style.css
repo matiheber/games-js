@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+}
+div.contenedor{
+  overflow: hidden;
+}
+div.fila1{
+  float: left;
+  width: 30%;
+  padding-top: 200px;
+}
+div.fila2{
+  float: left;
+  width: 70%;
+}
