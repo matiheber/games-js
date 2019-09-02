@@ -1,5 +1,5 @@
   window.onload = function () {
-
+    //EMPIEZA EL JUEGO AL CARGAR LA PÁGINA
     var palabraRandom;
     var arrayPalabraRandom;
     var arrayLetrasUsadas;
@@ -9,10 +9,7 @@
     var contador;
     var listaPalabras;
 
-      document.querySelector("#botonJuegoNuevo").addEventListener("click", empezarJuego)
-        //EMPIEZA EL JUEGO AL CARGAR LA PÁGINA
-    }
-
+    document.querySelector("#botonJuegoNuevo").addEventListener("click", empezarJuego)}
 function empezarJuego() {
     iniciarListaPalabras();
     arrayLetrasUsadas = [];
@@ -34,13 +31,11 @@ function iniciarListaPalabras() {
     "javascript"
   ];
 }
-
-
 function prepararJuego() {
   contador = 1;
   palabraRandom= obtenerPalabraRandom();
   if(palabraRandom == undefined){
-    alert("Perdiste!");
+    alert("Hay un error en la palabra!");
     return;
   }
   arrayPalabraRandom = palabraRandom.split("");
@@ -52,19 +47,6 @@ function prepararJuego() {
   var text = document.querySelector("#guessButton");
   recargarDisplay();
 }
-
-
-function empezarDeNuevo() {
-    for (var i =0; i < arrayLetrasUsadas; i++) {
-        habilitarDeshabilitar(arrayLetrasUsadas[i]);
-    }
-    arrayLetrasUsadas = [];
-    contadorDeRonda.innerHTML = "1";
-    ocultarMostrar("botonJuegoNuevo");
-    prepararJuego();
-}
-
-
 function chequeaLetra(letter) {
     habilitarDeshabilitar(letter);
     getInput(letter.toLowerCase()); //Hace que la letra este en minuscula SIEMPRE!!
@@ -72,7 +54,7 @@ function chequeaLetra(letter) {
     ultimoIndex++;
 }
 
-function getInput(acierto) { //ESTA FUNCION CHEQUEA
+function getInput(acierto) {
     var match = false;
     for (var i = 0; i < arrayPalabraRandom.length; i++) {
         if (acierto == arrayPalabraRandom[i]) {
@@ -87,6 +69,7 @@ function getInput(acierto) { //ESTA FUNCION CHEQUEA
     }
     recargarDisplay();
     palabra = mostrarPalabra.join("");
+    console.log(palabra);
     if (palabraRandom == palabra) {
         ocultarMostrar("letras");
         alert("Ganaste!!")
@@ -100,18 +83,16 @@ function getInput(acierto) { //ESTA FUNCION CHEQUEA
       var palabra = "";
       for (var i = 0; i < mostrarPalabra.length; i++) {
           palabra += mostrarPalabra[i] + " ";
+          console.log(mostrarPalabra[i]);
       }
       document.querySelector("#palabra").innerHTML = palabra;
   }
-
 function obtenerPalabraRandom() { //ELIGE LA PALABRA RANDOM DE NUESTRO ARRAY DE PALABRAS
     var numeroRandom = Math.floor(Math.random() * listaPalabras.length);
     var palabra = listaPalabras[numeroRandom];
     listaPalabras.splice(numeroRandom, 1);
     return palabra;
 }
-
-
 function chequeaPerdio() {
   if (contador >= 6) {
     ocultarMostrar("gif")
@@ -124,8 +105,6 @@ function chequeaPerdio() {
     })
   }
 }
-
-
 function ocultarMostrar(id) { //ESTA FUNCION SE PUEDE OBVIAR POR ALGO MAS SIMPLE
   var x = document.querySelector("#" + id);
   x.hidden = !x.hidden; //Si esta oculto lo muestra y viceversa [chequera metodo mas simple]

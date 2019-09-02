@@ -24,7 +24,7 @@ button:hover {
 }
 
 button:disabled,
-button[disabled]{  
+button[disabled]{
     color: rgba(0, 0, 0, 0.85) !important;
 }
 
@@ -63,12 +63,12 @@ p {
 div.fila1, div.fila2{
   overflow: hidden;
   width: 50%;
-  margin-left: 36%;
+  margin-left: 37%;
 }
 div.fila3{
   overflow: hidden;
   width: 50%;
-  margin-left: 40%;
+  margin-left: 41%;
 }
 div.fila1 div.letra, div.fila2 div.letra, div.fila3 div.letra{
   float: left;

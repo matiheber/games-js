@@ -31,7 +31,7 @@ function handleClick(e) {
     return
   }
 
-  // Qué pasa cuando el usuario elige una carta depende de cuántas elegidas ya hay.
+  // Qué pasa cuando el usuario elige una carta depende de cuántas elegidas hay.
   // Cuando todavía no elegimos ninguna: si el usuario aprieta en una carta que ya muestra la imágen hay que avisarle que elija otra; si no hay que dar vuelta la carta que eligió, guardarla para poder comparar después y registrar que elegimos una carta.
   if(cartasElegidas == 0) {
       if(carta.classList.length != 0) {
