@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600');
+
+html {
+	box-sizing: border-box
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: 'Nunito', sans-serif;
+	background-color: rgb(33, 33, 33);
+}
+
+.main-header {
+	background-color: #ffffff;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 30px;
+}
+
+.main-header h2 {
+	margin: 0;
+}
+
+.score-board {
+	width: 300px;
+	border: solid 1px #ffffff;
+	margin: 30px auto;
+	padding: 20px 0;
+	position: relative;
+	text-align: center;
+}
+
+.score-board-player {
+	background-color: rgb(232, 58, 58);
+	display: inline-block;
+	padding: 5px 10px;
+	color: #fff;
+	font-size: 12px;
+	min-width: 50px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+}
+
+.score-board-player.you {
+	left: 0;
+	transform: translate(-50%, -50%);
+}
+
+.score-board-player.pc {
+	right: 0;
+	transform: translate(50%, -50%);
+}
+
+.score-board h2,
+.score-board i {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 80px;
+	color: #fff;
+}
+
+.score-board h2 {
+	margin: 0;
+	font-weight: 400;
+}
+
+.score-board i {
+	font-style: normal;
+}
+
+.game-caption {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 300;
+	color: #fff;
+	margin: 0;
+}
+
+.action-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+.action-button {
+	background-color: transparent;
+	padding: 15px;
+	width: 150px;
+	border: solid 3px rgb(203, 203, 203);
+	border-radius: 50%;
+	background-color: rgb(78, 78, 78);
+	cursor: pointer;
+	outline: none;
+	transition: 300ms;
+}
+
+.action-button img {
+	width: 100%;
+	transform: rotate(90deg);
+}
+
+.action-button.win {
+	border-color: rgb(90, 223, 44);
+	box-shadow: 0 0 10px rgb(69, 177, 32);
+	background-color: rgba(90, 223, 44, 0.2);
+}
+
+.action-button.lose {
+	border-color: rgb(223, 44, 44);
+	box-shadow: 0 0 10px rgb(177, 32, 32);
+	background-color: rgba(223, 44, 44, 0.2);
+}
+
+.action-button.draw {
+	border-color: rgb(220, 223, 44);
+	box-shadow: 0 0 10px rgb(177, 171, 32);
+	background-color: rgba(220, 223, 44, 0.2);
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,0.8);
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	display: none;
+}
+
+.overlay p {
+	background-color: rgb(23, 133, 233);
+	color: #ffffff;
+	font-size: 30px;
+	padding: 15px 30px;
+	display: inline-block;
+}
+
+.btn-reset {
+	background-color: rgb(210, 38, 245);
+	color: #ffffff;
+	font-size: 15px;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 8px;
+}

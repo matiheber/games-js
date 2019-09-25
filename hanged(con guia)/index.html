@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ahorcado</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+
+<body>
+    <br><br>
+    <h1>Ahorcado</h1>
+    <br>
+    <article id="tablero" hidden>
+        <h2 id="palabra"></h2>
+        <br>
+        <div id="letras">
+
+          <div class="fila1">
+            <div class="letra">
+              <button class="botonLetra" id="q">Q</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="w">W</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="e">E</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="r">R</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="t">T</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="y">Y</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="u">U</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="i">I</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="o">O</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="p">P</button>
+            </div>
+
+          </div>
+
+          <div class="fila2">
+            <div class="letra">
+              <button class="botonLetra" id="a">A</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="s">S</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="d">D</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="f">F</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="g">G</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="h">H</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="j">J</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="k">K</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="l">L</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="ñ">Ñ</button>
+            </div>
+          </div>
+
+          <div class="fila3">
+            <div class="letra">
+              <button class="botonLetra" id="z">Z</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="x">X</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="c">C</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="v">V</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="b">B</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="n">N</button>
+            </div>
+            <div class="letra">
+              <button class="botonLetra" id="m">M</button>
+            </div>
+          </div>
+
+            <br>
+        </div>
+        <p><b id="contadorDeRonda"></b></p>
+    </article>
+    <article >
+      <img id="gif" hidden src="https://media1.tenor.com/images/cb8eff47b8d7b0d780a91a843e4faaad/tenor.gif?itemid=14191231" alt="hanged gif">
+    </article>
+    <article>
+        <button id="botonJuegoNuevo">Nuevo Juego</button>
+    </article>
+</body>
+
+</html>

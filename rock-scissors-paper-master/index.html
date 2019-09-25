@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Rock - Paper - Scissors</title>
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+		<header class="main-header">
+			<h2>🎮 Rock - Paper - Scissors 🎮</h2>
+		</header>
+
+		<div class="score-board">
+			<span class="score-board-player you">YOU</span>
+			<h2 id="userScore">0</h2>
+			<i>:</i>
+			<h2 id="pcScore">0</h2>
+			<span class="score-board-player pc">PC</span>
+		</div>
+
+		<h4 class="game-caption">
+			Waiting for your move!
+		</h4>
+
+		<div class="action-buttons">
+			<button type="button" class="action-button" id="rock">
+				<img src="images/rock-hand.svg" alt="rock hand icon">
+			</button>
+			<button type="button" class="action-button" id="paper">
+				<img src="images/paper-hand.svg" alt="paper hand icon">
+			</button>
+			<button type="button" class="action-button" id="scissors">
+				<img src="images/scissors-hand.svg" alt="scissors hand icon">
+			</button>
+		</div>
+
+		<div class="overlay">
+			<p>Resultado del juego</p>
+			<button type="button" class="btn-reset" id="resetGame">Reiniciar juego</button>
+		</div>
+
+		<script src="js/app.js"></script>
+	</body>
+</html>
